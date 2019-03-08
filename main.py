@@ -44,8 +44,6 @@ def del_chars(line):
 
 
 # | | | | | | | | | | | | | | | | | | | | | | | | | | | | |  SETTINGS
-#p = input('ip:port\n')
-#proxy = dict({'https':'https://{}'.format(p)})
 
 login = 'ЛОГИН'
 password = 'ПАРОЛЬ'
@@ -53,10 +51,9 @@ token = '' # токен, если хотите авторизавываться 
 owner_id = 85571327 # ID владельца альбома
 album_id = 3 # ID Альбома
 
-vkapi = get_vkapi(login, password, token)
-
 # | | | | | | | | | | | | | | | | | | | | | | BODY
 
+vkapi = get_vkapi(login, password, token)
 
 if vkapi:
     print('Успешная авторизация')
